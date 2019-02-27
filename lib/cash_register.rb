@@ -15,7 +15,7 @@ class CashRegister
       @items << title
     end
   end
-  
+  self.last_transaction = price * quantity
 
   def apply_discount
     if @discount != 0
